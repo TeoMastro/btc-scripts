@@ -1,0 +1,36 @@
+** BELLOW YOU WILL SEE THE COMMANDS I HAD TO RUN TO CREATE A UTXO SO I CAN USE IT IN THE SECOND SCRIPT **
+
+(base) teo@teo-VirtualBox:~/.bitcoin$ bitcoin-cli -rpcwallet="testwallet" getbalance
+5100.00000000
+(base) teo@teo-VirtualBox:~/.bitcoin$ bitcoin-cli -rpcwallet="testwallet" sendtoaddress "2N1MHfbuQyBux8QPXzDVy3hfb5ZkszczsSS" 3     
+d39be75058c0b23f736d84a597f9ef970debbb99640d4c0f7e71bd07fdc7580d
+(base) teo@teo-VirtualBox:~/.bitcoin$ bitcoin-cli -rpcwallet="testwallet" gettransaction "d39be75058c0b23f736d84a597f9ef970debbb99640d4c0f7e71bd07fdc7580d"
+{
+  "amount": -3.00000000,
+  "fee": -0.00022100,
+  "confirmations": 0,
+  "trusted": true,
+  "txid": "d39be75058c0b23f736d84a597f9ef970debbb99640d4c0f7e71bd07fdc7580d",
+  "wtxid": "d39be75058c0b23f736d84a597f9ef970debbb99640d4c0f7e71bd07fdc7580d",
+  "walletconflicts": [
+  ],
+  "time": 1713008545,
+  "timereceived": 1713008545,
+  "bip125-replaceable": "yes",
+  "details": [
+    {
+      "address": "2N1MHfbuQyBux8QPXzDVy3hfb5ZkszczsSS",
+      "category": "send",
+      "amount": -3.00000000,
+      "vout": 1,
+      "fee": -0.00022100,
+      "abandoned": false
+    }
+  ],
+  "hex": "02000000014c76231b63c43bce6dd8e8348c540cbbf6dd150b56231dd1cbafe220a79caf1f000000006a473044022069105e554a52bbe787e681116482b190fb0c18bea8e083a2d79187c0ddb230bd022049adf3f8c570d559a1f2146532f50ca1867961c438a15589380b615090626a8f01210397c46a385db45b0941a03723bafa8d25fae17765be553f6873c177ccaeac16e2fdffffff02acf823180100000017a9147007c02c2321b29efeac3e7e2cf6d6c615b73d758700a3e1110000000017a91458e6927bf237ab5517a26d307022afc2b3a36a128700000000",
+  "lastprocessedblock": {
+    "hash": "77ddc0dd4f259a82789b3fbab18e280e76483a5a910a5453b5ee365815cbd64b",
+    "height": 202
+  }
+}
+
