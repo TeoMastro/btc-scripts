@@ -1,0 +1,8 @@
+** Since I use a conda env the pip freeze outputs many libraries that I did not actually use. So I just got the imports from the 2 scripts and listed them bellow **
+
+import sys
+from bitcoinutils.setup import setup
+from bitcoinutils.keys import P2pkhAddress, P2shAddress, PrivateKey, PublicKey
+from bitcoinutils.script import Script
+from bitcoinutils.transactions import Transaction, TxInput, TxOutput
+from bitcoinutils.constants import SATOSHIS_PER_BITCOIN
