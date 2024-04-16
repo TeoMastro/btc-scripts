@@ -8,7 +8,6 @@ from bitcoinutils.constants import SATOSHIS_PER_BITCOIN
 def main():
     setup('testnet')
 
-    # Command-line arguments input
     if len(sys.argv) != 6:
         print("Usage: python script.py <Private Key 1> <Private Key 2> <Public Key> <P2SH Address> <P2PKH Address>")
         return
